@@ -9,7 +9,7 @@ int main() {
     // TORRE
     printf("Movimentacao Torre\n");
     for(int i = 1 ; i <= torreAnda ; i++){
-        printf(" | Direita -> %d",i);
+        printf("| Direita |\n");
     }
 
     // BISPO
@@ -17,7 +17,8 @@ int main() {
     printf("\n\nMovimentacao Bispo\n");
     int i = 1;
     while(i <= bispoAnda){
-        printf(" | Cima,direita -> %d",i);
+        printf(" Cima ");
+        printf("| Direita |\n");
         i++;
     }
 
@@ -25,9 +26,21 @@ int main() {
     printf("\n\nMovimentacao Rainha\n");
     int num=1; 
     do{
-        printf("%d <- Esquerda | ",num);
+        printf("| Esquerda |\n");
         num++;
     }while(num<=rainhaAnda);
+
+
+    //CAVALO
+    printf("\n\nMovimentacao Cavalo\n");
+    for(int x = 1 ; x<=1 ; x++){
+        for(int y = 0 ; y<=x; y++){
+            printf("| Baixo |\n");
+
+        }
+        printf("| Esquerda |");
+
+    }
 
 
 }
